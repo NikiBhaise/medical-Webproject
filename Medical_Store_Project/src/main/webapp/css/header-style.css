@@ -1,0 +1,175 @@
+body {
+  
+  line-height: 1.25;
+  background-size: 100% 100%;
+  
+}
+
+a
+{
+	font-family: Gill Sans;
+	text-decoration: none;
+	font-weight: 400;
+    font-size: 1.3em;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+table {
+  border: 1px solid #ff80ff;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family:Gill Sans;
+  font-weight: 300;
+  font-size: 1.2em;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f0f0f0;
+  border: 1px solid #fff2ff;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+* {box-sizing: border-box;}
+    
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      padding: 0px;
+      margin:0px;
+      overflow: hidden;
+      background-color:#414141;
+     color:white;
+      background-position: center;
+      background-repeat: no-repeat; 
+      font-family:'Times New Roman', Times, serif;
+      font-weight: 400;
+      font-size: 1.4em;
+      
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+   .topnav .search-container {
+      float: right;
+    }
+    
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+    
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #c0c0c0;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+      .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;  
+      }
+      
+    }
+
